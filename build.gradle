@@ -17,7 +17,13 @@ plugins {
 }
 
 repositories {
-  mavenCentral()
+    maven {
+        url "https://packages.jetbrains.team/maven/p/ij/intellij-dependencies"
+        credentials {
+            username = spaceUsername
+            password = spacePassword
+        }
+    }
 }
 
 group = "com.hierynomus"
@@ -192,11 +198,23 @@ github {
 }
 
 publishing {
-	publications {
-		maven(MavenPublication) {
-			from(components.java)
-		}
-	}
+    publications {
+        maven(MavenPublication) {
+            groupId = "org.jetbrains.intellij.deps"
+            artifactId = "sshj"
+            version = "0.32.0.1"
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url "https://packages.jetbrains.team/maven/p/ij/intellij-dependencies"
+            credentials {
+                username = spaceUsername
+                password = spacePassword
+            }
+        }
+    }
 }
 
 project.signing {

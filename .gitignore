@@ -1,3 +1,5 @@
+gradle.properties
+
 # IntelliJ IDEA
 .idea/
 *.iml
