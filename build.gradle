@@ -26,6 +26,7 @@ group = "com.hierynomus"
 defaultTasks ["build"]
 ext.moduleName = "${project.group}.${project.name}"
 
+
 scmVersion {
   tag {
     prefix = 'v'
