@@ -106,7 +106,7 @@ publishing {
           resolveStrategy = Closure.DELEGATE_FIRST
           name "sshj"
           description "SSHv2 library for Java"
-          url "https://github.com/hierynomus/sshj"
+          url "https://github.com/JetBrains/intellij-deps-sshj"
           inceptionYear "2009"
 
           issueManagement {
@@ -115,9 +115,9 @@ publishing {
           }
 
           scm {
-            connection "scm:git:git://github.com/hierynomus/sshj.git"
-            developerConnection "scm:git:git@github.com:hierynomus/sshj.git"
-            url "https://github.com/hierynomus/sshj.git"
+            connection "scm:git:git://github.com/JetBrains/intellij-deps-sshj.git"
+            developerConnection "scm:git:git@github.com:JetBrains/intellij-deps-sshj.git"
+            url "https://github.com/JetBrains/intellij-deps-sshj.git"
           }
 
           licenses {

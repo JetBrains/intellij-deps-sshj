@@ -13,6 +13,7 @@ plugins {
 }
 
 repositories {
+    mavenCentral()
     maven {
         url "https://packages.jetbrains.team/maven/p/ij/intellij-dependencies"
         credentials {
@@ -124,7 +125,7 @@ jar {
 
 
 java {
-	withJavadocJar()
+	//withJavadocJar()
 	withSourcesJar()
 }
 
@@ -198,7 +199,7 @@ publishing {
         maven(MavenPublication) {
             groupId = "org.jetbrains.intellij.deps"
             artifactId = "sshj"
-            version = "0.32.0.1"
+            version = "0.32.0-idea2"
             from components.java
         }
     }
