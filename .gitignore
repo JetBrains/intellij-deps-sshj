@@ -24,3 +24,4 @@ sshj.jar
 
 # VSCode
 .metals/
+/gradle.properties
