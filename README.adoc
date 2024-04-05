@@ -1,7 +1,7 @@
 = sshj - SSHv2 library for Java
 Jeroen van Erp
 :sshj_groupid: com.hierynomus
-:sshj_version: 0.38.0
+:sshj_version: 0.38.0-idea1
 :source-highlighter: pygments
 
 image:https://github.com/hierynomus/sshj/actions/workflows/gradle.yml/badge.svg[link="https://github.com/hierynomus/sshj/actions/workflows/gradle.yml"]
@@ -110,6 +110,9 @@ Issue tracker: https://github.com/hierynomus/sshj/issues
 Fork away!
 
 == Release history
+SSHJ 0.38.0-idea1 (2024-03-05)::
+* Backport of https://github.com/hierynomus/sshj/pull/922[#922]: known_hosts parsing does not ignore malformed base64 strings since 0.36
+
 SSHJ 0.38.0 (2024-01-02)::
 * Mitigated CVE-2023-48795 - Terrapin
   * Merged https://github.com/hierynomus/sshj/pull/917[#917]: Implement OpenSSH strict key exchange extension
