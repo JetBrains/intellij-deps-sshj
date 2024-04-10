@@ -239,6 +239,15 @@ publishing {
             from components.java
         }
     }
+    repositories {
+        maven {
+            url publicationRepositoryUrl
+            credentials {
+                username = publicationUsername
+                password = publicationPassword
+            }
+        }
+    }
 }
 
 project.signing {
