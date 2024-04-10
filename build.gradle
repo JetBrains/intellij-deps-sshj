@@ -242,10 +242,6 @@ publishing {
     repositories {
         maven {
             url "https://packages.jetbrains.team/maven/p/ij/intellij-dependencies"
-            credentials {
-                username = spaceUsername
-                password = spacePassword
-            }
         }
     }
 }
