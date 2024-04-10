@@ -239,11 +239,6 @@ publishing {
             from components.java
         }
     }
-    repositories {
-        maven {
-            url "https://packages.jetbrains.team/maven/p/ij/intellij-dependencies"
-        }
-    }
 }
 
 project.signing {
