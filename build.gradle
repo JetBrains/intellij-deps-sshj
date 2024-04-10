@@ -243,8 +243,8 @@ publishing {
         maven {
             url publicationRepositoryUrl
             credentials {
-                username = publicationUsername
-                password = publicationPassword
+                username publicationUsername
+                password publicationPassword
             }
         }
     }
